@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2 class="mb-4">Resultado da viagem </h2>
+
+<div class="card p-4 shadow">
+
+    <p><strong>Litros:</strong> {{ litros }} Litros</p>
+    <p><strong>Total:</strong> R$ {{ total }}</p>
+    <p><strong>Por km:</strong>  {{ por_km }} Por Km</p>
+
+    <p>
+        <strong>Classificação:</strong> 
+        {% if classificacao == "Beberrao" %}
+    <span class="badge bg-danger">{{ classificacao }}</span>
+
+{% elif classificacao == "padrao" %}
+    <span class="badge bg-warning text-dark">{{ classificacao }}</span>
+
+  
+{% elif classificacao == "economico" %}
+<span class="badge bg-warning text-dark">{{ classificacao }}</span>
+
+
+{% else %}
+    <span class="badge bg-success">{{ classificacao }}</span>
+{% endif %}
+    </p>
+
+</div>
+
+<a href="/" class="btn btn-secondary mt-3">Novo cálculo</a>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2 class="mb-4">Simulador de Custos de Viagem. </h2>
+
+<form method="POST">
+
+    <div class="mb-3">
+        <label class="form-label">Distancia total da viagem em km</label>
+        <input type="number" name="km" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Consumo medio do veiculo em KM/l</label>
+        <input type="number" name="kml" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Preço do litro do combustivel R$</label>
+        <input type="number" name="preco" class="form-control" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Calcular viagem </button>
+
+</form>
+
+{% endblock %}
