@@ -1,31 +1,12 @@
-# Ambiente virtual
-
+# Ambiente virtual — nunca versionar
 venv/
-.env/
-.env.*
 
-# Cache do Python
-
-**pycache**/
+# Arquivos de cache do Python
+__pycache__/
 *.pyc
-*.pyo
-*.pyd
 
-# Arquivos do sistema
-
-.DS_Store
-Thumbs.db
-
-# VS Code
-
+# Configurações locais do VS Code
 .vscode/
 
-# Arquivos temporários
-
-*.log
-*.sqlite3
-
-# Arquivos de build
-
-dist/
-build/
+# Variáveis de ambiente sensíveis (senhas, chaves)
+.env

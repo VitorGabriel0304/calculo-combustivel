@@ -18,9 +18,9 @@ def home():
 
 
         if kml < 8:
-            classificacao = "Beberrão"
+            classificacao = "Beberrao"
         elif kml <= 15:
-            classificacao = "Padrão"
+            classificacao = "Padrao"
         elif kml <= 18:
             classificacao = "Economico"
         

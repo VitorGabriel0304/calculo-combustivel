@@ -6,20 +6,20 @@
 
 <div class="card p-4 shadow">
 
-    <p><strong>Litros:</strong> {{ litros }} Litros</p>
-    <p><strong>Total:</strong> R$ {{ total }}</p>
-    <p><strong>Por km:</strong>  {{ por_km }} Por Km</p>
+    <p><strong>Litros:</strong> {{ litros | round(2) }} Litros</p>
+    <p><strong>Total:</strong> R$ {{ total | round(2) }}</p>
+    <p><strong>Por km:</strong>  {{ por_km | round(2) }} Por Km</p>
 
     <p>
         <strong>Classificação:</strong> 
         {% if classificacao == "Beberrao" %}
     <span class="badge bg-danger">{{ classificacao }}</span>
 
-{% elif classificacao == "padrao" %}
-    <span class="badge bg-warning text-dark">{{ classificacao }}</span>
+{% elif classificacao == "Padrao" %}
+    <span class="badge bg-warning text-dark"> {{ classificacao }} </span>
 
   
-{% elif classificacao == "economico" %}
+{% elif classificacao == "Economico" %}
 <span class="badge bg-warning text-dark">{{ classificacao }}</span>
 
 
